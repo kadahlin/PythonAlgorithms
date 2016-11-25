@@ -3,6 +3,9 @@
 #Implementation of the graham scan algorithm for finding the convex hull
 #for a set of points given as a list of of (x,y) tuples
 
+#INPUT FILE: text file where each line is an x coordinate of a point and a
+#y coordinate of a point, separated by a tab character
+
 import sys
 import os.path
 
