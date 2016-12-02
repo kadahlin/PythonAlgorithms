@@ -11,7 +11,7 @@
 # This is the fractional knapsack, as opposed to the 0-1 knapsack problem, because
 # we are allowed to only take portions of the items. For example if the item "x" with
 # the most value weighs 10 units but our knapsack only has the capacity of 5 units,
-# we can take half of item x.
+# we are allowed to take half of item x.
 
 #INPUT FILE: a text file where each line is an item weight and an item benefit,
 #separated by a tab character.
@@ -22,8 +22,8 @@ import os.path
 def fractional_knapsack(filename):
     #Dictionary with integer keys denoting the order they appeared in the INPUT
     #list and tuple values with are the items weights combined with the benefits.
-    #The item order does not matter but I included it to output the solution
-    #nicely.
+    #The item order/index does not matter but I included it for the purpose of
+    #printing the solution nicely.
     items = {}
     index = 0
     with open(filename) as f:
